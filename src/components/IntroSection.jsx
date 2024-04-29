@@ -23,7 +23,6 @@ export function IntroSection() {
           blandit bibendum a a ante. Sed ut aliquam urna. Aenean et mollis lorem. Nullam a arcu nec ipsum varius
           bibendum.
         </p>
-
       </div>
     </div>
   );

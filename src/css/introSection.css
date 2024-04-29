@@ -16,8 +16,9 @@
   }
   
   .intro-image {
-    width: 50%; /* Set width to 30% of the container */
-    border-radius: 10px; /* Rounded corners */
-    margin-right: 20px; /* Add space to the right of the image */
-    float: left; /* Float the image to the left */
+    width: 100%; 
+    border-radius: 10px; 
+    margin-right: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
