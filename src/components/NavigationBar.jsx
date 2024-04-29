@@ -17,6 +17,9 @@ export function NavigationBar() {
       <li>
         <a href="#">SPONZORI</a>
       </li>
+      <li>
+        <a href="#">KONTAKT</a>
+      </li>
     </ul>
   </nav>
   );

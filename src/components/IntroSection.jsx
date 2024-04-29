@@ -1,29 +1,48 @@
 // IntroSection.js
 import React from 'react';
-import introImage from '../assets/intro-image.png'; // Import the intro image
+import { useState } from 'react';
+import introImage from '../assets/intro-image.png';
+import { ImageModal } from './ImageModal.jsx'
 
 export function IntroSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="intro-section">
       <div className="content-wrapper">
         <p className="intro-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur ex non tortor blandit commodo.
-          Mauris non leo at leo dictum posuere. Donec fermentum tortor vel nulla tempus, id maximus purus faucibus.
-          Nulla facilisi. Sed non metus sit amet justo iaculis volutpat. Nulla facilisi. Proin rutrum tellus in magna
-          fermentum, quis volutpat ex tristique. Sed dapibus posuere risus, in fermentum elit. Sed ac nisl at odio
-          blandit bibendum a a ante. Sed ut aliquam urna. Aenean et mollis lorem. Nullam a arcu nec ipsum varius
-          bibendum.
+          Vítame Vás na stránke Košického Airsoft-ového Tímu!
+          </p>        
+          <p className="intro-text">
+          Sme skupina airsoftových nadšencov, ktorí chcú posunúť airsoft v Košiciach na ďalší level. 
+          Začali sme sa stretávať už v roku 2019. Vtedy nás bolo zhruba 15 a stretávali sme sa väčšinou raz
+          do týždňa, v Nedeľu. To sme ešte netušili ako dlho nám to vydrží a kam až budú naše ciele smerovať! Teraz je v našej skupine viac ako 40 mien, hoci je pravda,
+          že pevné jadro tvorí tak tretina. Zakladateľom skupiny a naším vedúcim je Robo alias 'Bobo'. Hlavne jemu vďačíme za to, že sa môžeme stretávať. Bobo organizuje
+          hry, vyhľadáva rôzne miesta a má víziu. Bez neho by sme sa neposkladali ani na duel :). Za to ti, Bobo, patrí veľká vďaka ;).
         </p>
-        <img src={introImage} alt="Introduction" className="intro-image" />
+        <img src={introImage} alt="Introduction" className="intro-image" onClick={openModal} />
         <p className="intro-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur ex non tortor blandit commodo.
-          Mauris non leo at leo dictum posuere. Donec fermentum tortor vel nulla tempus, id maximus purus faucibus.
-          Nulla facilisi. Sed non metus sit amet justo iaculis volutpat. Nulla facilisi. Proin rutrum tellus in magna
-          fermentum, quis volutpat ex tristique. Sed dapibus posuere risus, in fermentum elit. Sed ac nisl at odio
-          blandit bibendum a a ante. Sed ut aliquam urna. Aenean et mollis lorem. Nullam a arcu nec ipsum varius
-          bibendum.
+          Keďže sa airsoft stal z "občajného" víkendového odreagovania veľkou vášňou, rozhodli sme sa dať do toho viac, čoho výsledkom je aj táto stránka. Okrem nej pre Vás chystáme aj
+          nové ihrisko priamo v Košiciach. Chceme všetkým ukázať, že airsoft je šport, ktorý stojí za pozornosť - kopec adrenálínu, zábavy ale aj fyzického vypätia na jednom mieste so
+          zaujímavými ľuďmi, ktorí majú čo ponúknuť aj mimo airsoftového ihriska. S novým ihriskom príde aj zopár herných režimov ako je napríklad súboj o vlajky, dominátor či zneškodnenie
+          bomby podľa známej hry Counter-Strike.
+        </p>
+        <p className="intro-text">
+            Myslím, že je sa na čo tešiť :) Stay tuned!
+        </p>
+        <p className="intro-text" style={{ textAlign: 'right' }}>
+            Mr. Crow
         </p>
       </div>
+      <ImageModal isOpen={isModalOpen} closeModal={closeModal} imageSrc={introImage} />
     </div>
   );
 }
