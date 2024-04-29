@@ -25,7 +25,7 @@ export function IntroSection() {
           Sme skupina airsoftových nadšencov, ktorí chcú posunúť airsoft v Košiciach na ďalší level. 
           Začali sme sa stretávať už v roku 2019. Vtedy nás bolo zhruba 15 a stretávali sme sa väčšinou raz
           do týždňa, v Nedeľu. To sme ešte netušili ako dlho nám to vydrží a kam až budú naše ciele smerovať! Teraz je v našej skupine viac ako 40 mien, hoci je pravda,
-          že pevné jadro tvorí tak tretina. Zakladateľom skupiny a naším vedúcim je Robo alias 'Bobo'. Hlavne jemu vďačíme za to, že sa môžeme stretávať. Bobo organizuje
+          že pevné jadro tvorí tak tretina. Zakladateľom skupiny a naším vedúcim je Rado alias 'Bobo'. Hlavne jemu vďačíme za to, že sa môžeme stretávať. Bobo organizuje
           hry, vyhľadáva rôzne miesta a má víziu. Bez neho by sme sa neposkladali ani na duel :). Za to ti, Bobo, patrí veľká vďaka ;).
         </p>
         <img src={introImage} alt="Introduction" className="intro-image" onClick={openModal} />

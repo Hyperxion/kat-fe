@@ -39,3 +39,10 @@ header img {
   height: auto; /* Maintain aspect ratio */
   max-height: 200px; /* Adjust the maximum height as needed */
 }
+
+h1 {
+  font-family: 'Panfleta Stencil', sans-serif; /* Apply custom font */
+  font-size: 80px; /* Set font size to 40px */
+  color: white; /* Set text color to white */
+  text-align: center;
+}
