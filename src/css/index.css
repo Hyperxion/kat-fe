@@ -41,6 +41,7 @@ header {
   display: flex; /* Use flexbox */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
+  margin-top: 25px;
 }
 
 header img {

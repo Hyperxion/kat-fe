@@ -1,56 +1,59 @@
 /* navigationBar.css */
 nav {
-    font-family: 'Panfleta Stencil', sans-serif;
-    text-align: center; /* Center the text */
-    position: relative; /* Position relative for absolute positioning */
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 40px; /* Adjust the margin between list items */
-  }
-  
-  nav ul li:last-child {
-    margin-right: 0; /* Remove margin from the last list item */
-  }
-  
-  nav ul li a {
-    color: white; /* White color */
-    text-decoration: none; /* Remove underline */
-    font-size: 40px; /* Increase font size */
-    position: relative; /* Position relative for pseudo-element */
-  }
-  
-  nav ul li a::before,
-  nav ul li a::after {
-    content: ''; /* Empty content */
-    display: block;
-    height: 2px; /* Height of the line */
-    background-color: white; /* White color */
-    position: absolute; /* Position absolute */
-    bottom: -5px; /* Position under the text */
-  }
-  
-  nav ul li a::before {
-    left: 0; /* Align with the left edge of the text */
-    width: 0; /* Initial width */
-    transition: width 0.3s; /* Add transition for smooth animation */
-  }
-  
-  nav ul li a::after {
-    right: 0; /* Align with the right edge of the text */
-    width: 0; /* Initial width */
-    transition: width 0.3s; /* Add transition for smooth animation */
-  }
-  
-  nav ul li a:hover::before,
-  nav ul li a:hover::after {
-    width: 50%; /* Set width to 50% of the text width on hover */
-  }
-  
+  font-family: 'Panfleta Stencil', sans-serif;
+  text-align: center; /* Center the text */
+  position: fixed; /* Fix the navigation bar at the top */
+  top: 0; /* Align the navigation bar at the top */
+  left: 0; /* Align the navigation bar at the left */
+  width: 100%; /* Set the navigation bar width to 100% */
+  background-color: black; /* Adjust background color as needed */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 40px; /* Adjust the margin between list items */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin from the last list item */
+}
+
+nav ul li a {
+  color: white; /* White color */
+  text-decoration: none; /* Remove underline */
+  font-size: 40px; /* Increase font size */
+  position: relative; /* Position relative for pseudo-element */
+}
+
+nav ul li a::before,
+nav ul li a::after {
+  content: ''; /* Empty content */
+  display: block;
+  height: 2px; /* Height of the line */
+  background-color: white; /* White color */
+  position: absolute; /* Position absolute */
+  bottom: -5px; /* Position under the text */
+}
+
+nav ul li a::before {
+  left: 0; /* Align with the left edge of the text */
+  width: 0; /* Initial width */
+  transition: width 0.3s; /* Add transition for smooth animation */
+}
+
+nav ul li a::after {
+  right: 0; /* Align with the right edge of the text */
+  width: 0; /* Initial width */
+  transition: width 0.3s; /* Add transition for smooth animation */
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+  width: 50%; /* Set width to 50% of the text width on hover */
+}
