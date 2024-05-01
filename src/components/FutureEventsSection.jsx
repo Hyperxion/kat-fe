@@ -24,7 +24,8 @@ export function FutureEventsSection() {
   return (
     <div className="future-event-section">
       <h1>Nasledujúca akcia </h1>      
-      <button className="event-btn" onClick={openModal}>{loadDateTime()}<br />Ihrisko Opátske</button>      
+      <button className="event-btn" onClick={openModal}>{loadDateTime()}<br />Ihrisko Opátske</button>
+      <EditEventModal isOpen={isModalOpen} closeModal={closeModal}/>      
     </div>
   );
 }

@@ -1,8 +1,14 @@
+// EditEventModal.jsx
 import React, { useState } from 'react';
+import Modal from 'react-modal';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css'; // Import the styles
 import { verifyPassword } from '../util/passwordVerification';
 
-export function EditEventModal({ closeModal }) {
-  const [date, setDate] = useState('');
+Modal.setAppElement('#root'); // Set the root element for accessibility
+
+export function EditEventModal({ isOpen, closeModal }) {
+  const [date, setDate] = useState(new Date());
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
@@ -15,17 +21,29 @@ export function EditEventModal({ closeModal }) {
       console.log('Date saved:', date);
       closeModal(); // Close the modal
     } else {
-      setError('Incorrect password. Please try again.');
+      setError('Nesprávne heslo!');
     }
   };
 
   return (
-    <div className="modal">
+    <Modal
+      isOpen={isOpen}
+      onRequestClose={closeModal}
+      className="modal"
+      overlayClassName="modal-overlay"
+    >
       <h2>Edit Event</h2>
-      <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
+      <DatePicker
+        selected={date}
+        onChange={setDate}
+        showTimeSelect
+        timeFormat="HH:mm"
+        timeIntervals={15}
+        dateFormat="MMMM d, yyyy h:mm aa"
+      />
       <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
       <button onClick={saveDate}>Save</button>
       {error && <p className="error">{error}</p>}
-    </div>
+    </Modal>
   );
 }
