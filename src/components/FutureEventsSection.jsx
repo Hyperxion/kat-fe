@@ -24,8 +24,14 @@ export function FutureEventsSection() {
   return (
     <div className="future-event-section">
       <h1>Nasledujúca akcia </h1>      
-      <button className="event-btn" onClick={openModal}>{loadDateTime()}<br />Ihrisko Opátske</button>
-      <EditEventModal isOpen={isModalOpen} closeModal={closeModal}/>      
+      {/* <button className="event-btn">{loadDateTime()}<br />Ihrisko Opátske</button> */}
+      <p className='event-date'>
+      {loadDateTime()}<br />Ihrisko Opátske
+      </p>
+      {/* 
+      // We will use this modal when saving into DB via separate backend, because we cannot write to a file from FE
+      <EditEventModal isOpen={isModalOpen} closeModal={closeModal}/>
+             */}
     </div>
   );
 }

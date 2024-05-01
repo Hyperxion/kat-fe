@@ -12,12 +12,9 @@ export function EditEventModal({ isOpen, closeModal }) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  // Function to handle saving the new date
   const saveDate = () => {
-    // Implement logic to save the new date
-    // Check if password is correct
     if (verifyPassword(password)) {
-      // Save the new date
+      writeDateToFile(date);
       console.log('Date saved:', date);
       closeModal(); // Close the modal
     } else {
@@ -26,12 +23,7 @@ export function EditEventModal({ isOpen, closeModal }) {
   };
 
   return (
-    <Modal
-      isOpen={isOpen}
-      onRequestClose={closeModal}
-      className="modal"
-      overlayClassName="modal-overlay"
-    >
+    <Modal isOpen={isOpen} onRequestClose={closeModal} className="modal" overlayClassName="modal-overlay">
       <h2>Edit Event</h2>
       <DatePicker
         selected={date}

@@ -60,7 +60,7 @@ h1 {
 .event-date {
   display: inline-block; /* Make the element inline-block */
   font-family: sans-serif; /* Apply custom font */
-  font-size: 80px; /* Set font size to 80px */
+  font-size: 50px; /* Set font size to 80px */
   color: white; /* Set text color to white */
   text-align: center;
   background-color: black;
