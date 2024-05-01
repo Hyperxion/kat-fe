@@ -16,7 +16,7 @@ export function IntroSection() {
   };
 
   return (
-    <div className="intro-section">
+    <div className="intro-section" id='intro-section'>
       <div className="content-wrapper">
         <p className="intro-text">
           Vítame Vás na stránke Košického Airsoft-ového Tímu!
