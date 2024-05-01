@@ -3,10 +3,19 @@
   src: url('/PanfletaStencil-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'American Captain';
+  src: url('/American-Captain.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #000000; /* Black background */
+}
+
+button {
+  text-align: center;
 }
 
 .container {
@@ -45,4 +54,26 @@ h1 {
   font-size: 80px; /* Set font size to 40px */
   color: white; /* Set text color to white */
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.event-date {
+  display: inline-block; /* Make the element inline-block */
+  font-family: sans-serif; /* Apply custom font */
+  font-size: 80px; /* Set font size to 80px */
+  color: white; /* Set text color to white */
+  text-align: center;
+  background-color: black;
+  border: 3px solid white; /* Add a white border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  padding: 10px; /* Add padding for spacing */
+}
+
+.event-btn {
+  font-size: 50px; /* Set font size to 80px */
+  background-color: black;
+  color: white; /* Set text color to white */
+  border: 3px solid white; /* Add a white border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  padding: 10px; /* Add padding for spacing */
 }

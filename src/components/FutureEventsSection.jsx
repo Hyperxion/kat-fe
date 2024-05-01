@@ -7,7 +7,7 @@ export function FutureEventsSection() {
 
   const openModal = () => {
     setIsModalOpen(true);
-    console.log("Modal opened");
+    console.log('Modal opened');
   };
 
   const closeModal = () => {
@@ -17,16 +17,14 @@ export function FutureEventsSection() {
   // Function to load date and time from text file
   const loadDateTime = () => {
     // Implement logic to load date and time from text file
-    return 'April 30, 2024 12:00 PM'; // Example date and time
+    return `30.4.2024 7:30 Utorok`; // Example date and time
   };
-  console.log("isModalOpen:", isModalOpen);
+  console.log('isModalOpen:', isModalOpen);
+
   return (
     <div className="future-event-section">
-      <h1>Najblizsia akcia </h1>
-      <p className="intro-text">
-Date and Time: {loadDateTime()}</p>
-      <button onClick={openModal}>Edit</button>
-      {isModalOpen && <EditEventModal closeModal={closeModal} />}
+      <h1>Nasledujúca akcia </h1>      
+      <button className="event-btn" onClick={openModal}>{loadDateTime()}<br />Ihrisko Opátske</button>      
     </div>
   );
 }
