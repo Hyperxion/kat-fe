@@ -6,5 +6,6 @@ import './css/navigationBar.css';
 import './css/introSection.css';
 import './css/futureEventsSection.css';
 import './css/editEventModal.css'
+import './css/gallerySection.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);

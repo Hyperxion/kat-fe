@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import img1 from '/img2.png';
 
-const images = [
-  '../assets/img1.jpg',
-  '../assets/img2.png',
-  // Add more image URLs as needed
-];
+const images = [];
+
+for (let i = 1; i < 12; i++) {
+    images.push(`/img${i}.png`);    
+}
+
+console.log(`-----> images is: ${JSON.stringify(images, null, 2)}`);
 
 export function GallerySection() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -25,9 +28,9 @@ export function GallerySection() {
   return (
     <div className="gallery-section">
       <img
-        src={images[currentIndex]}
+        src={images[3]}
         alt={`Image ${currentIndex + 1}`}
-        onClick={() => openModal(currentIndex)}
+        className='gallery-image'
       />
     </div>
   );
