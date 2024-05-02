@@ -19,7 +19,13 @@ Modal.setAppElement('#root'); // Set the app root element
 export function ImageModal({ isOpen, closeModal, imageSrc }) {
   return (
     <Modal isOpen={isOpen} onRequestClose={closeModal} style={customStyles}>
-      <img src={imageSrc} alt="Enlarged Image" />
+      <div>
+        <input type="image" className="image-btn" src="/left_arrow.png" />
+        {/* <button style={{background: url(left_arrow.png)}}>Previous</button> */}
+        <img src={imageSrc} alt="Enlarged Image" />
+        {/* <button>Next</button> */}
+        <input type="image" className="image-btn" src="/right_arrow.png" />
+      </div>
     </Modal>
   );
 }
