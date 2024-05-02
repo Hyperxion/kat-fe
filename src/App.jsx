@@ -3,8 +3,25 @@ import { NavigationBar } from './components/NavigationBar.jsx';
 import { IntroSection } from './components/IntroSection.jsx';
 import { FutureEventsSection } from './components/FutureEventsSection.jsx';
 import { GallerySection } from './components/GallerySection.jsx';
+import { useState } from 'react';
+
+const images = ['/gallery/intro-image.png'];
+
+for (let i = 1; i < 12; i++) {
+  images.push(`/gallery/img${i}.png`);
+}
 
 function App() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const previousImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+  };
+
+  const nextImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+  };
+  
   return (
     <>
       <Header />
@@ -13,7 +30,7 @@ function App() {
       <h1>Nasledujúca akcia </h1>
       <FutureEventsSection />
       <h1>Galéria</h1>
-      <GallerySection />
+      <GallerySection images={images} currentIndex={currentIndex}/>
     </>
   );
 }
