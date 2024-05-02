@@ -4,6 +4,7 @@
 }
 
 .content-wrapper {
+  display: table;
   max-width: 800px; /* Set maximum width */
   margin: 0 auto; /* Center content horizontally */
 }

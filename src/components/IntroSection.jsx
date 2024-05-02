@@ -1,10 +1,10 @@
 // IntroSection.js
 import React from 'react';
 import { useState } from 'react';
-import introImage from '../assets/intro-image.png';
 import { ImageModal } from './ImageModal.jsx'
 
-export function IntroSection() {
+export function IntroSection({images}) {
+  const introImageIndex = 0;
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -28,7 +28,7 @@ export function IntroSection() {
           že pevné jadro tvorí tak tretina. Zakladateľom skupiny a naším vedúcim je Rado alias 'Bobo'. Hlavne jemu vďačíme za to, že sa môžeme stretávať. Bobo organizuje
           hry, vyhľadáva rôzne miesta a má víziu. Bez neho by sme sa neposkladali ani na duel :). Za to ti, Bobo, patrí veľká vďaka ;).
         </p>
-        <img src={introImage} alt="Introduction" className="intro-image" onClick={openModal} />
+        <img src={images[introImageIndex]} alt="Introduction" className="intro-image" onClick={openModal} />
         <p className="intro-text">
           Keďže sa airsoft stal z "občajného" víkendového odreagovania veľkou vášňou, rozhodli sme sa dať do toho viac, čoho výsledkom je aj táto stránka. Okrem nej pre Vás chystáme aj
           nové ihrisko priamo v Košiciach. Chceme všetkým ukázať, že airsoft je šport, ktorý stojí za pozornosť - kopec adrenálínu, zábavy ale aj fyzického vypätia na jednom mieste so
@@ -42,7 +42,7 @@ export function IntroSection() {
             Mr. Crow
         </p>
       </div>
-      <ImageModal isOpen={isModalOpen} closeModal={closeModal} imageSrc={introImage} />
+      <ImageModal isOpen={isModalOpen} closeModal={closeModal}  images={images}  index={introImageIndex} />
     </div>
   );
 }

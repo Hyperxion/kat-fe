@@ -78,3 +78,9 @@ h1 {
   border-radius: 5px; /* Add border radius for rounded corners */
   padding: 10px; /* Add padding for spacing */
 }
+
+.button-wrapper {
+  background: chocolate;
+  display: table-cell;
+  vertical-align: middle;
+}

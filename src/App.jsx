@@ -26,7 +26,7 @@ function App() {
     <>
       <Header />
       <NavigationBar />
-      <IntroSection />
+      <IntroSection images={images}/>
       <h1>Nasledujúca akcia </h1>
       <FutureEventsSection />
       <h1>Galéria</h1>
