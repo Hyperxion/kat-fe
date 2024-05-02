@@ -22,8 +22,7 @@ export function FutureEventsSection() {
   console.log('isModalOpen:', isModalOpen);
 
   return (
-    <div className="future-event-section" id='future-event-section'>
-      <h1>Nasledujúca akcia </h1>      
+    <div className="future-event-section" id='future-event-section'>            
       {/* <button className="event-btn">{loadDateTime()}<br />Ihrisko Opátske</button> */}
       <p className='event-date'>
       {loadDateTime()}<br />Ihrisko Opátske
