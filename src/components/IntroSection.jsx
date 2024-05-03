@@ -16,8 +16,8 @@ export function IntroSection({images}) {
   };
 
   return (
-    <div className="intro-section" id='intro-section'>
-      <div className="content-wrapper">
+    <div className="centered-text" id='intro-section'>
+      <div className="image-wrapper">
         <p className="intro-text">
           Vítame Vás na stránke Košického Airsoft-ového Tímu!
           </p>        
@@ -28,7 +28,7 @@ export function IntroSection({images}) {
           že pevné jadro tvorí tak tretina. Zakladateľom skupiny a naším vedúcim je Rado alias 'Bobo'. Hlavne jemu vďačíme za to, že sa môžeme stretávať. Bobo organizuje
           hry, vyhľadáva rôzne miesta a má víziu. Bez neho by sme sa neposkladali ani na duel :). Za to ti, Bobo, patrí veľká vďaka ;).
         </p>
-        <img src={images[introImageIndex]} alt="Introduction" className="intro-image" onClick={openModal} />
+        <img src={images[introImageIndex]} alt="Introduction" className="image" onClick={openModal} />
         <p className="intro-text">
           Keďže sa airsoft stal z "občajného" víkendového odreagovania veľkou vášňou, rozhodli sme sa dať do toho viac, čoho výsledkom je aj táto stránka. Okrem nej pre Vás chystáme aj
           nové ihrisko priamo v Košiciach. Chceme všetkým ukázať, že airsoft je šport, ktorý stojí za pozornosť - kopec adrenálínu, zábavy ale aj fyzického vypätia na jednom mieste so

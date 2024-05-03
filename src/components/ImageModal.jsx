@@ -29,7 +29,7 @@ export function ImageModal({ isOpen, closeModal, images, index }) {
 
   return (
     <Modal isOpen={isOpen} onRequestClose={closeModal} style={customStyles}>
-      <div>
+      <div className='image-container'>
         <input type="image" className="image-btn" src="/left_arrow.png" onClick={previousImage}/>
         {/* <button style={{background: url(left_arrow.png)}}>Previous</button> */}
         <img src={images[currentIndex]} alt="Enlarged Image" />

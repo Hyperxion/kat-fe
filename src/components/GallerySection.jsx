@@ -22,9 +22,9 @@ export function GallerySection({images, currentIndex: index}) {
   };
 
   return (
-    <div className="content-wrapper">
+    <div className="image-wrapper">
       <input type="image" className="image-btn" src="/left_arrow.png" onClick={previousImage}/>
-        <img src={images[currentIndex]} className="intro-image" alt={`Image ${index + 1}`} onClick={openModal} />
+        <img src={images[currentIndex]} className="image" alt={`Image ${index + 1}`} onClick={openModal} />
         <input type="image" className="image-btn" src="/right_arrow.png" onClick={nextImage}/>
       <ImageModal isOpen={isModalOpen} closeModal={closeModal} images={images}  index={index} />
 

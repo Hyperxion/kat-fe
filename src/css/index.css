@@ -14,24 +14,12 @@ body {
   background-color: #000000; /* Black background */
 }
 
-button {
+.centered-text {
   text-align: center;
 }
 
-.container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.centered-image {
-  width: 50%; /* Adjust this value to make the image smaller */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 100%;
-  max-height: 100%;
+button {
+  text-align: center;
 }
 
 header {
@@ -70,17 +58,22 @@ h1 {
   padding: 10px; /* Add padding for spacing */
 }
 
-.event-btn {
-  font-size: 50px; /* Set font size to 80px */
-  background-color: black;
-  color: white; /* Set text color to white */
-  border: 3px solid white; /* Add a white border */
-  border-radius: 5px; /* Add border radius for rounded corners */
-  padding: 10px; /* Add padding for spacing */
+.image-wrapper {
+  display: table;
+  max-width: 800px; /* Set maximum width */
+  margin: 0 auto; /* Center content horizontally */
 }
 
-.button-wrapper {
-  background: chocolate;
-  display: table-cell;
-  vertical-align: middle;
+.image {
+  width: 100%;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-right: 20px;
+}
+
+.intro-text {
+  color: white; /* Set text color to white */
+  font-size: 25px; /* Set font size to 35px */
+  line-height: 1.5;
+  text-align: left; /* Align text to the left */
 }
