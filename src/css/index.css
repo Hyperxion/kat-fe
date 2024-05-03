@@ -64,6 +64,14 @@ h1 {
   margin: 0 auto; /* Center content horizontally */
 }
 
+.image-btn {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .image {
   width: 100%;
   border-radius: 10px;
@@ -76,4 +84,9 @@ h1 {
   font-size: 25px; /* Set font size to 35px */
   line-height: 1.5;
   text-align: left; /* Align text to the left */
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }

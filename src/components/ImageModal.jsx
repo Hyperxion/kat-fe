@@ -1,5 +1,5 @@
 // ImageModal.js
-import React, { useState }  from 'react';
+import React, { useState } from 'react';
 import Modal from 'react-modal';
 
 const customStyles = {
@@ -29,13 +29,19 @@ export function ImageModal({ isOpen, closeModal, images, index }) {
 
   return (
     <Modal isOpen={isOpen} onRequestClose={closeModal} style={customStyles}>
-      <div className='image-container'>
-        <input type="image" className="image-btn" src="/left_arrow.png" onClick={previousImage}/>
-        {/* <button style={{background: url(left_arrow.png)}}>Previous</button> */}
-        <img src={images[currentIndex]} alt="Enlarged Image" />
-        {/* <button>Next</button> */}
-        <input type="image" className="image-btn" src="/right_arrow.png" onClick={nextImage}/>
-      </div>
+        <tr>
+          <td>
+            <input type="image" className="image-btn" src="/left_arrow.png" onClick={previousImage} />
+          </td>
+          <td>
+            <div>
+            <img src={images[currentIndex]} alt="Enlarged Image" />
+            </div>
+          </td>
+          <td>
+            <input type="image" className="image-btn" src="/right_arrow.png" onClick={nextImage} />
+          </td>
+        </tr>
     </Modal>
   );
 }

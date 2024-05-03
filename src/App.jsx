@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 const images = ['/gallery/intro-image.png'];
 
-for (let i = 1; i < 12; i++) {
+for (let i = 1; i < 11; i++) {
   images.push(`/gallery/img${i}.png`);
 }
 
