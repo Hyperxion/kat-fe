@@ -107,14 +107,10 @@ h1 {
   margin-bottom: 50px;
 }
 
-.social-media {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
 
-.social-media-container::after {
-  content: '';
-  clear: both;
-  display: table;
+.social-media-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
 }

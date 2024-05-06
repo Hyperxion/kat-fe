@@ -13,6 +13,11 @@ export function ContactSection() {
             <img src="/instagram-logo.png" className="logo" />
           </a>
         </div>
+        <div className="social-media">
+          <a href="https://www.instagram.com/kosickyairsofttim/" target="_blank" title="Košický Airsoft Tím">
+            <img src="/google-maps-logo.png" className="logo" />
+          </a>
+        </div>
       </div>
     </>
   );
