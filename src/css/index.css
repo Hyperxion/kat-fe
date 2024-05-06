@@ -40,7 +40,7 @@ header img {
 
 h1 {
   font-family: 'Panfleta Stencil', sans-serif; /* Apply custom font */
-  font-size: 80px; /* Set font size to 40px */
+  font-size: 60px; /* Set font size to 40px */
   color: white; /* Set text color to white */
   text-align: center;
   margin-bottom: 20px;
@@ -88,7 +88,7 @@ h1 {
 
 .contact-text {
   color: white; /* Set text color to white */
-  font-size: 45px; /* Set font size to 35px */
+  font-size: 35px; /* Set font size to 35px */
   line-height: 1.5;
   text-align: center; /* Align text to the left */
   font-family: 'American Captain';
@@ -105,11 +105,4 @@ h1 {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 50px;
-}
-
-.social-media-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  column-gap: 10px;
-  row-gap: 10px;
 }

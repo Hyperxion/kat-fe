@@ -37,7 +37,6 @@ function App() {
       <SponsorsSection />
       <h1 id='contact-section'>Kontakt</h1>
       <ContactSection />
-
     </>
   );
 }
