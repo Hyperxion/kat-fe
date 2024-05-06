@@ -45,6 +45,8 @@ export function NavigationBar() {
       <li>
         <a href="#" onClick={() => scrollToSection('contact-section')}>KONTAKT</a>
       </li>
+      <li>
+      </li>
     </ul>
   </nav>
   );

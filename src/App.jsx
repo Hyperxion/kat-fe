@@ -3,6 +3,7 @@ import { NavigationBar } from './components/NavigationBar.jsx';
 import { IntroSection } from './components/IntroSection.jsx';
 import { FutureEventsSection } from './components/FutureEventsSection.jsx';
 import { GallerySection } from './components/GallerySection.jsx';
+import { SponsorsSection } from './components/SponsorsSection.jsx';
 import { useState } from 'react';
 
 const images = ['/gallery/intro-image.png'];
@@ -31,6 +32,8 @@ function App() {
       <FutureEventsSection />
       <h1>Galéria</h1>
       <GallerySection images={images} currentIndex={currentIndex}/>
+      <h1>Sponzori</h1>
+      <SponsorsSection />
     </>
   );
 }
