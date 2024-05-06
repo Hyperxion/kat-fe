@@ -22,7 +22,7 @@ export function GallerySection({ images, currentIndex: index }) {
   };
 
   return (
-    <table className='center' id='gallery-section'>
+    <table className='center' >
       <tr>
         <td>
           <input type="image" className="image-btn" src="/left_arrow.png" onClick={previousImage} />

@@ -29,13 +29,13 @@ function App() {
       <Header />
       <NavigationBar />
       <IntroSection images={images}/>
-      <h1>Nasledujúca akcia </h1>
+      <h1 id='future-event-section'>Nasledujúca akcia </h1>
       <FutureEventsSection />
-      <h1>Galéria</h1>
+      <h1 id='gallery-section'>Galéria</h1>
       <GallerySection images={images} currentIndex={currentIndex}/>
-      <h1>Sponzori</h1>
+      <h1 id='sponsors-section' >Sponzori</h1>
       <SponsorsSection />
-      <h1>Kontakt</h1>
+      <h1 id='contact-section'>Kontakt</h1>
       <ContactSection />
 
     </>

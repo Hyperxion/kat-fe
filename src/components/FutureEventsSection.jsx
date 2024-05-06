@@ -10,7 +10,7 @@ export function FutureEventsSection() {
 
 
   return (
-    <div className="centered-text" id='future-event-section'>            
+    <div className="centered-text" >            
       <p className='event-date'>
       {loadDateTime()}<br />Ihrisko Opátske
       </p>
