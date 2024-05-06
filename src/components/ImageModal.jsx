@@ -29,19 +29,21 @@ export function ImageModal({ isOpen, closeModal, images, index }) {
 
   return (
     <Modal isOpen={isOpen} onRequestClose={closeModal} style={customStyles}>
+      <table className="center">
         <tr>
           <td>
             <input type="image" className="image-btn" src="/left_arrow.png" onClick={previousImage} />
           </td>
           <td>
             <div>
-            <img src={images[currentIndex]} alt="Enlarged Image" />
+              <img src={images[currentIndex]} alt="Enlarged Image" />
             </div>
           </td>
           <td>
             <input type="image" className="image-btn" src="/right_arrow.png" onClick={nextImage} />
           </td>
         </tr>
+      </table>
     </Modal>
   );
 }
