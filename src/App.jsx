@@ -4,6 +4,7 @@ import { IntroSection } from './components/IntroSection.jsx';
 import { FutureEventsSection } from './components/FutureEventsSection.jsx';
 import { GallerySection } from './components/GallerySection.jsx';
 import { SponsorsSection } from './components/SponsorsSection.jsx';
+import { ContactSection } from './components/ContactSection.jsx';
 import { useState } from 'react';
 
 const images = ['/gallery/intro-image.png'];
@@ -34,6 +35,9 @@ function App() {
       <GallerySection images={images} currentIndex={currentIndex}/>
       <h1>Sponzori</h1>
       <SponsorsSection />
+      <h1>Kontakt</h1>
+      <ContactSection />
+
     </>
   );
 }

@@ -86,7 +86,23 @@ h1 {
   text-align: left; /* Align text to the left */
 }
 
+.contact-text {
+  color: white; /* Set text color to white */
+  font-size: 45px; /* Set font size to 35px */
+  line-height: 1.5;
+  text-align: center; /* Align text to the left */
+  font-family: 'American Captain';
+}
+
 .center {
   margin-left: auto;
   margin-right: auto;
+}
+
+.logo {
+  display: table;
+  width: 8%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
